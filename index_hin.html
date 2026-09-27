@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>केसरी एंटरप्राइजेज | मोतिहारी</title>
+    <meta name="description"
+        content="केसरी एंटरप्राइजेज पूरे मोतिहारी शहर में सीमेंट, टीएमटी सरिया, गिट्टी, बालू, पाइप और हार्डवेयर की आपूर्ति करता है।" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Tiro+Devanagari+Hindi&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --saffron: #F59E0B;
+            --deep: #9A3412;
+            --orange: #EA580C;
+            --cream: #FFF8ED;
+            --ink: #17120D;
+            --muted: #6B6258;
+            --white: #fff;
+            --line: #F1DEC3;
+            --shadow: 0 18px 50px rgba(91, 43, 8, .12);
+            --radius: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: "DM Sans", "Noto Sans Devanagari", sans-serif;
+            color: var(--ink);
+            background: var(--cream);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        .container {
+            width: min(1160px, 92%);
+            margin: auto
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 248, 237, .93);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(241, 222, 195, .8);
+        }
+
+        .nav {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800
+        }
+
+        /* Base brand text container styling */
+        .brand .brand-text {
+            font-size: 20px;
+            font-weight: 700;
+            display: inline-flex;
+            gap: 6px;
+        }
+
+        .brand .brand-kesari {
+            color: #EA580C;
+            /* 1C1917 */
+        }
+
+        .brand .brand-enterprises {
+            color: #1C1917;
+        }
+
+        .brand img {
+            width: 54px;
+            height: 54px;
+            object-fit: cover;
+            border-radius: 14px
+        }
+
+        .brand span {
+            font-size: 17px;
+            letter-spacing: .3px
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+            align-items: center
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: 700;
+            color: #53483D
+        }
+
+        nav a:hover {
+            color: var(--orange)
+        }
+
+        .nav-cta {
+            padding: 11px 18px;
+            border-radius: 999px;
+            background: var(--saffron);
+            color: #271504 !important;
+            box-shadow: 0 8px 20px rgba(245, 158, 11, .22);
+        }
+
+        .lang-switch {
+            padding: 7px 14px;
+            border: 1px solid var(--orange);
+            border-radius: 999px;
+            color: var(--orange) !important;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .lang-switch:hover {
+            background: var(--orange);
+            color: #fff !important;
+        }
+
+        .hamb {
+            display: none;
+            border: 0;
+            background: none;
+            font-size: 28px;
+            cursor: pointer
+        }
+
+        /* Hero */
+        .hero {
+            padding: 78px 0 84px;
+            overflow: hidden;
+            position: relative
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            right: -180px;
+            top: -180px;
+            width: 560px;
+            height: 560px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #FDBA74 0, #FDBA7430 43%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.08fr .92fr;
+            gap: 62px;
+            align-items: center
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 13px;
+            border-radius: 999px;
+            background: #FFF0D5;
+            color: var(--deep);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 20px;
+        }
+
+        .eyebrow i {
+            width: 7px;
+            height: 7px;
+            background: var(--saffron);
+            border-radius: 50%
+        }
+
+        h1 {
+            font-family: "Playfair Display", "Tiro Devanagari Hindi", serif;
+            font-size: clamp(42px, 5.5vw, 70px);
+            line-height: 1.35;
+            letter-spacing: 0;
+            max-width: 720px;
+        }
+
+        h1 em {
+            font-style: normal;
+            color: var(--orange);
+            display: inline-block;
+        }
+
+        .hero p {
+            /* Scales smoothly from 15px on mobile to 18px on desktop */
+            font-size: clamp(15px, 2.2vw, 18px);
+            /* Provides breathing room for Hindi matras */
+            line-height: 1.6;
+            color: var(--muted);
+            max-width: 590px;
+            margin: 20px 0 28px;
+        }
+
+        p.hero-products_list {
+            color: #EA580C !important;
+            font-weight: 700 !important;
+            font-size: clamp(15px, 2vw, 18px) !important;
+            line-height: 1.3 !important;
+            margin-top: 12px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 21px;
+            border-radius: 13px;
+            font-weight: 800;
+            font-size: 14px;
+            transition: .2s;
+        }
+
+        .btn-primary {
+            background: var(--ink);
+            color: #fff;
+            box-shadow: 0 12px 28px rgba(23, 18, 13, .16)
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: var(--deep)
+        }
+
+        .btn-outline {
+            border: 1px solid #D9C6AB;
+            background: #fff8ef
+        }
+
+        .btn-outline:hover {
+            border-color: var(--saffron)
+        }
+
+        .hero-card {
+            position: relative;
+            background: #FFF8ED;
+            border: 1px solid var(--line);
+            border-radius: 34px;
+            padding: 22px;
+            box-shadow: var(--shadow);
+            min-height: 470px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .hero-card:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, transparent 36%, rgba(255, 248, 237, 0.72) 64%, rgba(255, 248, 237, 0.94) 86%, rgba(255, 248, 237, 0.98) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-photo {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            opacity: 1;
+        }
+
+        .hero-copy {
+            position: relative;
+            color: var(--ink);
+            z-index: 2;
+        }
+
+        .hero-copy small {
+            color: var(--deep);
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .hero-copy h2 {
+            font-family: "Playfair Display", "Tiro Devanagari Hindi", serif;
+            font-size: 38px;
+            line-height: 1.25;
+            margin: 8px 0 10px;
+            color: #17120D;
+        }
+
+        .hero-copy p {
+            color: #3E342B;
+            font-size: 14px;
+            margin: 0;
+            max-width: 380px;
+            font-weight: 500;
+        }
+
+        .stamp {
+            position: absolute;
+            right: 22px;
+            top: 22px;
+            z-index: 2;
+            background: #fff;
+            color: var(--deep);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 1.2;
+            transform: rotate(8deg);
+            border: 4px solid #FFE0A3;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .14);
+        }
+
+        /* Stats */
+        .trust {
+            padding: 0 0 78px
+        }
+
+        .trust-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px
+        }
+
+        .trust-card {
+            /* Subtle top-to-bottom warm wash */
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFFBEB 100%);
+            /* Delicate warm border */
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            /* Ambient warm drop shadow for depth */
+            box-shadow: 0 10px 25px -5px rgba(154, 52, 18, 0.06);
+
+            border-radius: 18px;
+            padding: 20px 22px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .trust-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -5px rgba(154, 52, 18, 0.12);
+        }
+
+        .trust-card b {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 3px
+        }
+
+        .trust-card span {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        /* Sections */
+        section {
+            padding: 86px 0
+        }
+
+        .section-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 30px;
+            margin-bottom: 34px
+        }
+
+        .kicker {
+            color: var(--orange);
+            font-size: clamp(28px, 4.5vw, 42px);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            margin-bottom: 9px
+        }
+
+        h2.section-title {
+            font-family: "Playfair Display", "Tiro Devanagari Hindi", serif;
+            font-size: clamp(26px, 3.5vw, 34px);
+            line-height: 1.3;
+            letter-spacing: 0;
+        }
+
+        .section-head p {
+            max-width: 460px;
+            color: var(--muted);
+            font-size: 15px
+        }
+
+        /* Products */
+        .products {
+            background: #fff
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px
+        }
+
+        .product {
+            border: 1px solid #EEDCC4;
+            border-radius: 22px;
+            overflow: hidden;
+            background: #FFFCF7;
+            transition: .25s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow)
+        }
+
+        .product-img {
+            height: 210px;
+            overflow: hidden;
+            background: #F7E8D0
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .35s
+        }
+
+        .product-img img.pos-top {
+            object-position: top;
+        }
+
+        .product:hover .product-img img {
+            transform: scale(1.05)
+        }
+
+        .product-body {
+            padding: 20px
+        }
+
+        .product-body h3 {
+            font-size: 19px;
+            margin-bottom: 5px
+        }
+
+        .product-body p {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 6px 10px;
+            background: #FFF0D5;
+            color: var(--deep);
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800
+        }
+
+        /* Why us */
+        .why-grid {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 56px;
+            align-items: flex-start
+        }
+
+        .why-image {
+            border-radius: 28px;
+            overflow: hidden;
+            height: 100%;
+            min-height: 380px;
+            max-height: 480px;
+            box-shadow: var(--shadow);
+            margin-top: 36px;
+        }
+
+        .why-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .reasons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 26px
+        }
+
+        .reason {
+            /* Subtle top-to-bottom warm wash */
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFFBEB 100%);
+            /* Delicate warm border */
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            /* Ambient warm drop shadow for depth */
+            box-shadow: 0 10px 25px -5px rgba(154, 52, 18, 0.06);
+            padding: 19px;
+            border-radius: 18px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .reason:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -5px rgba(154, 52, 18, 0.12);
+        }
+
+        .icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            background: #FFF0D5;
+            color: var(--deep);
+            font-size: 20px;
+            margin-bottom: 12px
+        }
+
+        .reason h3 {
+            font-size: 16px;
+            margin-bottom: 4px
+        }
+
+        .reason p {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        /* Delivery */
+        .delivery {
+            background: #24150C;
+            color: #fff
+        }
+
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center
+        }
+
+        .delivery .kicker {
+            color: #FDBA4A
+        }
+
+        .delivery h2 {
+            font-family: "Playfair Display", "Tiro Devanagari Hindi", serif;
+            font-size: 42px;
+            line-height: 1.3;
+            margin-bottom: 16px
+        }
+
+        .delivery p {
+            color: #EAD9C9;
+            max-width: 520px
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px
+        }
+
+        .chip {
+            padding: 9px 13px;
+            border: 1px solid #66442E;
+            border-radius: 999px;
+            color: #FFEBD0;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        .delivery-card {
+            background: linear-gradient(145deg, #F59E0B, #EA580C);
+            padding: 34px;
+            border-radius: 28px;
+            color: #24150C
+        }
+
+        .delivery-card .pin {
+            font-size: 38px
+        }
+
+        .delivery-card h3 {
+            font-family: "Playfair Display", "Tiro Devanagari Hindi", serif;
+            font-size: 31px;
+            margin: 8px 0
+        }
+
+        .delivery-card p {
+            color: #3D200E
+        }
+
+        .delivery-card a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #24150C;
+            color: #fff;
+            padding: 13px 17px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 13px
+        }
+
+        /* Contact */
+        .contact {
+            background: #FFF8ED
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px
+        }
+
+        .contact-card {
+            /* Subtle top-to-bottom warm wash */
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFFBEB 100%);
+            /* Delicate warm border */
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            /* Ambient warm drop shadow for depth */
+            box-shadow: 0 10px 25px -5px rgba(154, 52, 18, 0.06);
+            border-radius: 22px;
+            padding: 26px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -5px rgba(154, 52, 18, 0.12);
+        }
+
+        .contact-card h3 {
+            font-size: 19px;
+            margin-bottom: 7px
+        }
+
+        .contact-card p {
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .phones {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 16px
+        }
+
+        .phone {
+            padding: 12px 15px;
+            border-radius: 12px;
+            background: #FFF0D5;
+            color: var(--deep);
+            font-weight: 900
+        }
+
+        footer {
+            background: #17120D;
+            color: #BDAF9F;
+            padding: 24px 0;
+            font-size: 12px
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px
+        }
+
+        @media(max-width:850px) {
+            nav {
+                display: none
+            }
+
+            .hamb {
+                display: block
+            }
+
+            nav.open {
+                display: flex;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                right: 0;
+                background: #fff8ed;
+                padding: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                border-bottom: 1px solid var(--line)
+            }
+
+            .hero-grid,
+            .why-grid,
+            .delivery-grid,
+            .contact-grid {
+                grid-template-columns: 1fr
+            }
+
+            .hero {
+                padding-top: 50px
+            }
+
+            .hero-card {
+                min-height: 390px
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .section-head {
+                display: block
+            }
+
+            .section-head p {
+                margin-top: 12px
+            }
+
+            .why-image {
+                margin-top: 0;
+            }
+        }
+
+        @media(max-width:560px) {
+
+            .trust-row,
+            .product-grid,
+            .reasons {
+                grid-template-columns: 1fr
+            }
+
+            h1 {
+                font-size: 34px;
+                line-height: 1.35;
+                letter-spacing: 0;
+            }
+
+            h2.section-title {
+                font-family: "Playfair Display", "Tiro Devanagari Hindi", serif;
+                font-size: clamp(24px, 4vw, 34px);
+                /* Desktop: 34px, Mobile min: 24px */
+                line-height: 1.3;
+                letter-spacing: 0;
+            }
+
+            .hero-card {
+                min-height: 350px
+            }
+
+            .hero-copy h2 {
+                font-size: 28px;
+                line-height: 1.25;
+            }
+
+            .hero-copy p {
+                font-size: 13px;
+                line-height: 1.5;
+            }
+
+            .footer-row {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <a class="brand" href="#home">
+                <img src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/ke-logo.png"
+                    alt="केसरी एंटरप्राइजेज">
+                <div class="brand-text">
+                    <span class="brand-kesari">केसरी</span>
+                    <span class="brand-enterprises">एंटरप्राइजेज</span>
+                </div>
+            </a>
+            <button class="hamb" aria-label="मेनू खोलें" onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="#products">उत्पाद</a>
+                <a href="#why-us">हमें क्यों चुनें</a>
+                <a href="#delivery">डिलीवरी क्षेत्र</a>
+                <a href="#contact">संपर्क करें</a>
+                <a class="nav-cta" href="tel:+919612630125">अभी कॉल करें</a>
+                <a href="index.html" class="lang-switch">English</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow"><i></i> निर्माण सामग्री • मोतिहारी</div>
+                    <h1>मजबूत बनाएं।<br><em>केसरी एंटरप्राइजेज के साथ बनाएं।</em></h1>
+                    <p>
+                        गुणवत्तापूर्ण निर्माण सामग्री, विश्वसनीय आपूर्ति और पूरे शहर में डिलीवरी —
+                        भरोसे के साथ निर्माण करने के लिए आवश्यक सब कुछ।
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="#products">उत्पाद देखें →</a>
+                        <a class="btn btn-outline" href="tel:+919612630125">☎ दर (रेट) पूछें</a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <img class="hero-photo"
+                        src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/StoreFront.png"
+                        alt="केसरी एंटरप्राइजेज - स्टोर फ्रंट">
+                    <div class="stamp">पूरे<br>मोतिहारी में<br>डिलीवरी</div>
+                    <div class="hero-copy">
+                        <h2>नींव से लेकर<br>फिनिशिंग तक।</h2>
+                        <p class="hero-products_list">सीमेंट, छड़, गिट्टी, बालू, पाइप, पेंट और बाक़ी हार्डवेयर
+                            सामग्री — आपके प्रोजेक्ट के लिए
+                            उपलब्ध।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="trust">
+            <div class="container trust-row">
+                <div class="trust-card"><b>उत्पादों की विस्तृत श्रृंखला</b><span>निर्माण की सभी जरूरी चीजें एक ही छत के
+                        नीचे।</span></div>
+                <div class="trust-card"><b>विश्वसनीय आपूर्ति</b><span>जब आपके प्रोजेक्ट को आवश्यकता हो, सामग्री
+                        तैयार।</span></div>
+                <div class="trust-card"><b>मोतिहारी में डिलीवरी</b><span>पूरे मोतिहारी शहर में सुविधाजनक डिलीवरी।</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="products" id="products">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <div class="kicker">हम क्या बेचते हैं?</div>
+                        <h2 class="section-title">निर्माण के हर चरण के लिए सामग्री।</h2>
+                    </div>
+                    <p>स्ट्रक्चरल सामग्री से लेकर रोजमर्रा के हार्डवेयर तक, केसरी एंटरप्राइजेज आपके निर्माण
+                        कार्य की हर जरूरत को पूरा करता है।</p>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product">
+                        <div class="product-img"><img
+                                src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/tmt-bar-8mm-1000x1000.webp"
+                                alt="टीएमटी सरिया"></div>
+                        <div class="product-body">
+                            <h3>टीएमटी सरिया </h3>
+                            <p>छत (स्लैब), पिलर और नींव के लिए मजबूत सरिया।</p><span class="tag">स्ट्रक्चरल</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-img"><img
+                                src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/cement-bags-are-placed-pallets-stored-warehouses-cement-bags-construction-scaled.jpg"
+                                alt="सीमेंट बोरी"></div>
+                        <div class="product-body">
+                            <h3>सीमेंट</h3>
+                            <p>कंक्रीट, जुड़ाई और फिनिशिंग के लिए उत्तम गुणवत्ता वाला सीमेंट।</p><span
+                                class="tag">अनिवार्य</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-img"><img class="pos-top"
+                                src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/20-mm-black-gitti-614.jpg"
+                                alt="गिट्टी">
+                        </div>
+                        <div class="product-body">
+                            <h3>गिट्टी</h3>
+                            <p>ढलाई और कंक्रीट कार्य के लिए गिट्टी।</p><span class="tag">एग्रीगेट</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-img"><img class="pos-top"
+                                src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/baalu_image.webp"
+                                alt="बालू"></div>
+                        <div class="product-body">
+                            <h3>बालू / रेत</h3>
+                            <p>ढलाई, प्लास्टर, ईंट की जुड़ाई और अन्य कार्यों के लिए बालू।</p><span class="tag">साइट
+                                सप्लाई</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-img"><img
+                                src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/pipes_fiitings.jpg"
+                                alt="पाइप्स एवं फिटिंग्स"></div>
+                        <div class="product-body">
+                            <h3>पाइप्स एवं फिटिंग्स</h3>
+                            <p>प्लंबिंग और जल निकासी की आवश्यकताओं के लिए पाइप और फिटिंग्स।</p><span
+                                class="tag">प्लंबिंग</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-img"><img
+                                src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/paints.jpeg"
+                                alt="हार्डवेयर उपकरण"></div>
+                        <div class="product-body">
+                            <h3>हार्डवेयर एवं अन्य</h3>
+                            <p>उपयोगी उपकरण, फिटिंग्स, नट-बोल्ट और अन्य निर्माण हार्डवेयर।</p><span
+                                class="tag">हार्डवेयर</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us">
+            <div class="container why-grid">
+                <div class="why-image">
+                    <img src="https://raw.githubusercontent.com/pritam-76/publicAssets/main/HardwareSuppliers/StoreFront.png"
+                        alt="निर्माण स्थल पर काम करते मजदूर">
+                </div>
+                <div>
+                    <div class="kicker">केसरी एंटरप्राइजेज ही क्यों?</div>
+                    <h2 class="section-title">आपके प्रोजेक्ट के लिए एक व्यावहारिक साथी।</h2>
+                    <div class="reasons">
+                        <div class="reason">
+                            <div class="icon">✓</div>
+                            <h3>गुणवत्ता सर्वोपरि</h3>
+                            <p>हम वास्तविक निर्माण कार्य के लिए मजबूत और टिकाऊ सामग्री पर ध्यान केंद्रित करते हैं।</p>
+                        </div>
+                        <div class="reason">
+                            <div class="icon">⚡</div>
+                            <h3>त्वरित प्रतिक्रिया</h3>
+                            <p>आसान कॉलिंग और त्वरित ऑर्डर समन्वय।</p>
+                        </div>
+                        <div class="reason">
+                            <div class="icon">▣</div>
+                            <h3>वन-स्टॉप सप्लायर</h3>
+                            <p>मुख्य निर्माण सामग्री और हार्डवेयर एक ही स्थान पर प्राप्त करें।</p>
+                        </div>
+                        <div class="reason">
+                            <div class="icon">⌖</div>
+                            <h3>स्थानीय डिलीवरी</h3>
+                            <p>पूरे मोतिहारी शहर और आसपास के ग्राहकों की सेवा में तत्पर।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery" id="delivery">
+            <div class="container delivery-grid">
+                <div>
+                    <div class="kicker">डिलीवरी क्षेत्र</div>
+                    <h2>आपकी साइट पर सामग्री चाहिए?<br>हम पहुंचाएंगे।</h2>
+                    <p>केसरी एंटरप्राइजेज पूरे मोतिहारी शहर में निर्माण सामग्री की डिलीवरी करता है। अपनी आवश्यकता और
+                        डिलीवरी स्थान के लिए हमें कॉल करें।</p>
+                    <div class="chips">
+                        <span class="chip">मोतिहारी शहर</span>
+                        <span class="chip">कंस्ट्रक्शन साइट्स</span>
+                        <span class="chip">निजी मकान</span>
+                        <span class="chip">ठेकेदार</span>
+                    </div>
+                </div>
+                <div class="delivery-card">
+                    <div class="pin">⌖</div>
+                    <h3>सूरजपुर, जीवधारा रोड</h3>
+                    <p>हमारा पता: सूरजपुर, जीवधारा रोड, पूर्वी चंपारण, बिहार 845429 — मोतिहारी एवं आसपास की आवश्यकताओं
+                        की पूर्ति के लिए तत्पर।
+                    </p>
+                    <a href="#contact">हमसे बात करें →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <div class="kicker">संपर्क करें</div>
+                        <h2 class="section-title">आइए, मिलकर निर्माण करें।</h2>
+                    </div>
+                    <p>क्या आपको निर्माण सामग्री की आवश्यकता है? उपलब्धता, मूल्य और डिलीवरी विवरण के लिए केसरी
+                        एंटरप्राइजेज को कॉल करें।</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>कॉल / व्हाट्सएप</h3>
+                        <p>अपनी आवश्यकता के लिए हमसे सीधे बात करें:</p>
+                        <div class="phones">
+                            <a class="phone" href="tel:+919612630125">96126 30125</a>
+                            <a class="phone" href="tel:+917033861355">70338 61355</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h3>पता / डिलीवरी स्थान</h3>
+                        <p>ग्राम – सूरजपुर, थाना – पिपराकोठी,<br>जिला – पूर्वी चंपारण, बिहार – 845429</p>
+                        <div class="phones"><a class="phone"
+                                href="https://www.google.com/maps/contrib/@26.5691443,84.9292041,17z/data=!3m1!4b1!4m4!8m3!1e4!3m1!1e1?entry=ttu&g_ep=EgoyMDI2MDkxNS4wIKXMDSoASAFQAw%3D%3D">मैप्स
+                                में खोलें ↗</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-row">
+            <span>© 2026 केसरी एंटरप्राइजेज. सर्वाधिकार सुरक्षित।</span>
+            <span>GSTIN: 10I0QPK1469R1Z5</span>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('open');
+        }
+        document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => {
+            document.getElementById('menu').classList.remove('open');
+        }));
+    </script>
+</body>
+
+</html>
